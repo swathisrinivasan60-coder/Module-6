@@ -26,14 +26,32 @@ To write a Python program to create a class `Student` with the private members `
 ### PROGRAM
 
 ```
+class pub_mod:
+    # constructor
+    def __init__(self, name, age):
+        self.name = name;
+        self.age = age;
+ 
+    def Age(self): 
+        # accessing public data member 
+        print("Age: ",self.age)
+       
+# creating object with values jason,35
+
+# accessing public data member 
+obj=pub_mod("Jason",35)
+print("Name: ", obj.name)  
+# calling public member function of the class 
+obj.Age()
 
 
 
 ```
 
 ### OUTPUT
+<img width="574" height="200" alt="image" src="https://github.com/user-attachments/assets/d054b6cb-baf7-415d-9943-addf8ac7dfe7" />
 
 
 ### RESULT
-
+Thus, the program successfully creates a class Student with private members name and age, and uses getter and setter methods to initialize and modify the age variable securely and correctly.
 
