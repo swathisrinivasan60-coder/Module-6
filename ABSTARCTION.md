@@ -34,11 +34,51 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
-
+from abc import ABC  
+  
+class Polygon(ABC): 
+     def sides(self):  
+         pass  
+  
+class Triangle(Polygon):   
+  
+     def sides(self):  
+         print("Triangle has 3 sides")   
+  
+class Pentagon(Polygon):   
+    def sides(self):
+        print("Pentagon has 5 sides")
+  
+     
+   #Add code here
+class Hexagon(Polygon):   
+    def sides(self):
+        print("Hexagon has 6 sides")
+  
+   #Add your code
+class square(Polygon):   
+  
+   def sides(self):   
+      print("I have 4 sides")   
+  
+# Driver code   
+t = Triangle()   
+t.sides()
+  
+s = square()   
+s.sides()
+  
+p = Pentagon()   
+p.sides() 
+  
+k = Hexagon()   
+k.sides()
 
 ```
 
 ### OUTPUT
+<img width="754" height="341" alt="image" src="https://github.com/user-attachments/assets/6cecb81b-3e94-4882-94f4-08a85a603ce2" />
 
 
 ### RESULT
+Thus, the program successfully defines an abstract base class Polygon with an abstract method sides(), and the subclasses implement this method correctly. When objects of the subclasses are created and the sides() method is invoked, the respective number of sides for each polygon is displayed as expected.
